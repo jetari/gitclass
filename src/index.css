@@ -3,11 +3,12 @@ body {
   }
   
   h1 {
-    color: white;
+    color: grey;
     text-align: center;
   }
   
   p {
     font-family: verdana;
     font-size: 20px;
+    text-align: center;
   }
