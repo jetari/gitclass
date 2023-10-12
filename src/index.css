@@ -1,14 +1,135 @@
 body {
-    background-color: lightblue;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+
+a {
+  color: #4145b1;
+}
+
+hr {
+  margin: 1em 0 1em 0;
+  background-color: #4145b1;
+  height: 1px;
+  opacity: 0.25;
+  border: none;
+}
+
+#tribute-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+/*   height: 700px; */
+}
+
+
+#img-div {
+  display: grid;
+  justify-items: center; 
+  align-items: center;
+  height: 600px;
+}
+
+
+#img-caption blockquote {
+  color: #fff;
+  z-index: 9999;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+
+#img-div img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  align-self: center;
+  justify-self: center;
+}
+
+#img-caption a {
+  color: #fff;
+}
+
+#img-caption {
+  background: #000;
+  width: 480px;
+  opacity: 1;
+  right: 6em;
+  position: relative;
+  z-index: 9999;
+  top: -240px;
+  padding: 0.25em;
+}
+
+#tribute-info {
+  width: 70%;
+  display: grid;
+  margin: 0 auto;
+  line-height: 1.68em;
+}
+
+#tribute-pivotal a {
+  font-weight: 800;
+}
+
+#tribute-info h1 {
+  font-size: 4em;
+  margin-bottom: .75em;
+  line-height: 1em;
+}
+
+#tribute-links {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#tribute-links a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#tribute-links i {
+  font-size: 1.25em;
+}
+
+@media only screen and (max-width: 1020px) {
+  #tribute-container {
+    grid-template-columns: 1fr;
+  }
+  #tribute-info {
+    margin-bottom: 2em;
+  }
+
+  #tribute-links {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  #img-caption {
+    width: 70%;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: .5rem;
+    background-color: transparent;
   }
   
-  h1 {
-    color: grey;
-    text-align: center;
+  #img-caption blockquote {
+    color: #333;
   }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-    text-align: center;
+  #img-caption a {
+    color: #4145b1;
   }
+}
